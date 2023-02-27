@@ -1,0 +1,7 @@
+csv_to_custom_table_demo.csv_to_custom_table_demo:
+  path: '/csv-to-custom-table-demo'
+  defaults:
+    _title: 'Csv to custom table demo'
+    _form: 'Drupal\csv_to_custom_table_demo\Form\CsvToCustomTableDemoForm'
+  requirements:
+    _permission: 'access content'

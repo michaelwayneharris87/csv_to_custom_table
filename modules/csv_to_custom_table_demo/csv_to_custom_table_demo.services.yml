@@ -1,0 +1,9 @@
+services:
+  csv_to_custom_table_demo.example:
+    class: Drupal\csv_to_custom_table_demo\CsvImporterExample
+    arguments: ['@csv_to_custom_table.importer', '@extension.list.module', '@database']
+  csv_to_custom_table_demo.event_subscriber:
+    class: Drupal\csv_to_custom_table_demo\EventSubscriber\CsvToCustomTableDemoSubscriber
+    arguments: [ ]
+    tags:
+      - { name: event_subscriber }

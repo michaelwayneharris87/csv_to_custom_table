@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function csv_to_custom_table_demo_schema(): array {
+  $schema['csv_to_custom_table_demo'] = [
+    'fields' => [
+      'firstname' => [
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ],
+      'lastname' => [
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ],
+      'age' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+    ],
+  ];
+
+  $schema['csv_to_custom_table_demo_with_event'] = [
+    'fields' => [
+      'fullname' => [
+        'type' => 'varchar',
+        'length' => 129,
+        'not null' => TRUE,
+      ],
+      'age' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+    ],
+  ];
+
+
+  return $schema;
+}

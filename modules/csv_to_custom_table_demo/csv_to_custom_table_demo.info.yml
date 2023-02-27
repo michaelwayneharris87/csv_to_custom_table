@@ -1,0 +1,7 @@
+name: CSV to custom table demo
+type: module
+description: Demonstrates the csv_to_custom_table functionality
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - csv_to_custom_table:csv_to_custom_table

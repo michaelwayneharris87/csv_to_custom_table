@@ -1,0 +1,4 @@
+services:
+  csv_to_custom_table.importer:
+    class: Drupal\csv_to_custom_table\CSVImporter
+    arguments: ['@database', '@event_dispatcher']
